@@ -4,6 +4,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@heroui/react";
+import Image from "next/image";
 
 interface OnboardingSlide {
   title: string;
@@ -41,11 +42,13 @@ const OnboardingCarousel: React.FC<OnboardingCarouselProps> = ({
 
         <div className="absolute inset-0 bg-gradient-to-b from-pink-500 via-purple-400 to-cyan-300">
           {slides[currentSlide].imageSrc && (
-            <img 
-              src={slides[currentSlide].imageSrc}
-              alt="Onboarding visual" 
-              className="w-full h-full object-cover"
-            />
+            <Image
+          src={slides[currentSlide].imageSrc}
+          alt="description"
+          className="w-full h-full object-cover"
+          width={500}
+          height={500}
+          />
           )}
         </div>
 

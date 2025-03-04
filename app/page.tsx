@@ -2,7 +2,7 @@
 import { useRouter } from 'next/navigation';
 import OnboardingCarousel from './components/carousel_home';
 
-export default function home(): React.ReactNode {
+export default function Home(): React.ReactNode {
   const router = useRouter();
   
   const slides = [
@@ -29,13 +29,12 @@ export default function home(): React.ReactNode {
 
   return (
     <main>
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <OnboardingCarousel 
-        slides={slides} 
-        onComplete={handleComplete} 
-      />
-    </div>
+      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <OnboardingCarousel 
+          slides={slides} 
+          onComplete={handleComplete} 
+        />
+      </div>
     </main>
-
   );
 }
