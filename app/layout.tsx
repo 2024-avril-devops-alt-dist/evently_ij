@@ -3,6 +3,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { HeroUIProvider } from "@heroui/react";
+import Nav from "./components/nav";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <HeroUIProvider>
+          <Nav />
           {children}
         </HeroUIProvider>
       </body>
