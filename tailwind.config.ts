@@ -13,6 +13,10 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        greenLight: "#DAF5F1", 
+        greenDark: "#249781",
+        greyLight: "#C7C7C7",
+        primaryGreen: "#249781",
       },
     },
   },

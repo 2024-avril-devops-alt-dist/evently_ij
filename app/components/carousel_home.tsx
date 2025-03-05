@@ -73,13 +73,13 @@ const OnboardingCarousel: React.FC<OnboardingCarouselProps> = ({
                 key={index} 
                 onClick={() => setCurrentSlide(index)}
                 className={`w-3 h-3 rounded-full transition-all ${
-                  index === currentSlide ? 'bg-teal-500 w-6' : 'bg-gray-200'
+                  index === currentSlide ? 'bg-primaryGreen w-6' : 'bg-gray-200'
                 }`}
               ></button>
             ))}
           </div>
 
-          <h2 className="text-teal-600 text-3xl font-semibold mb-4">
+          <h2 className="text-primaryGreen text-3xl font-semibold mb-4">
             {slides[currentSlide].title}
           </h2>
           <p className="text-gray-600 text-lg">
@@ -96,7 +96,7 @@ const OnboardingCarousel: React.FC<OnboardingCarouselProps> = ({
           </button>
           <Button 
             onClick={() => setCurrentSlide((prev) => (prev + 1) % slides.length)}
-            className="rounded-full w-12 h-12 flex items-center justify-center bg-teal-600 text-white hover:bg-teal-700 transition-colors"
+            className="rounded-full w-12 h-12 flex items-center justify-center bg-primaryGreen text-white hover:bg-teal-700 transition-colors"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 18l6-6-6-6" />

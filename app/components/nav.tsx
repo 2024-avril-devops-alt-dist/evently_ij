@@ -7,36 +7,32 @@ const Nav = () => {
     <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white shadow-lg 
       md:top-0 md:bottom-auto 
       flex justify-around items-center py-3 px-4">
-      {/* Mobile: Icons with labels */}
+      {/* Mobile */}
       <Link href="/" className="md:hidden text-gray-600 hover:text-black transition-colors">
         <div className="flex flex-col items-center">
           <Home className="w-6 h-6" />
-          <span className="text-xs mt-1">Home</span>
         </div>
       </Link>
       
       <Link href="/search" className="md:hidden text-gray-600 hover:text-black transition-colors">
         <div className="flex flex-col items-center">
           <Search className="w-6 h-6" />
-          <span className="text-xs mt-1">Search</span>
         </div>
       </Link>
       
-      <Link href="/music" className="md:hidden text-gray-600 hover:text-black transition-colors">
+      <Link href="/events" className="md:hidden text-gray-600 hover:text-black transition-colors">
         <div className="flex flex-col items-center">
           <Headphones className="w-6 h-6" />
-          <span className="text-xs mt-1">Music</span>
         </div>
       </Link>
       
       <Link href="/profile" className="md:hidden text-gray-600 hover:text-black transition-colors">
         <div className="flex flex-col items-center">
           <User className="w-6 h-6" />
-          <span className="text-xs mt-1">Profile</span>
         </div>
       </Link>
 
-      {/* Desktop: Text navigation */}
+      {/* Desktop */}
       <div className="hidden md:flex items-center space-x-8">
         <Link href="/" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">
           Home
