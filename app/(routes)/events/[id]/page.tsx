@@ -5,7 +5,7 @@ import { ChevronLeft, Heart } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { getEventById } from "@/service/eventService";
-import EventCard from "@/app/components/event_card";
+// import EventCard from "@/app/components/event_card";
 
 interface Address {
   city?: string;
@@ -96,13 +96,13 @@ export default function EventDetailHeader() {
       </div>
 </div>
 <div className="container mx-auto px-4 py-8">
-  <EventCard
+  {/* <EventCard
     category="Event"
     name={event.name}
     date={new Date(event.start_at).toLocaleDateString()}
     location={formatAdress(event.adress)}
     image={"/images/homepage/culture.jpg"}
-  />
+  /> */}
 </div>
 </>
   );

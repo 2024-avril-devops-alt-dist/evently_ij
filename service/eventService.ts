@@ -1,4 +1,4 @@
-import axiosInstance from "../utils/axios";
+import axiosInstance from "@/utils/axios";
 
 export const getEvents = async () => {
   const response = await axiosInstance.get("/events");
