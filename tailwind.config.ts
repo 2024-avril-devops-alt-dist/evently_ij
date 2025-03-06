@@ -16,6 +16,9 @@ const config: Config = {
         greenLight: "#DAF5F1", 
         greenDark: "#249781",
         greyLight: "#C7C7C7",
+        greyBg: "#F5F8FC",
+        greyText: "#656565",
+
         primaryGreen: "#249781",
       },
     },

@@ -5,7 +5,7 @@ import { ChevronLeft, Heart } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { getEventById } from "@/service/eventService";
-// import EventCard from "@/app/components/event_card";
+import TicketCard from "@/app/components/ticket_card";
 
 interface Address {
   city?: string;
@@ -92,17 +92,15 @@ export default function EventDetailHeader() {
           </div>
           <p className="mt-4 text-gray-700">{event.desc}</p>
           
+        <div>
+        <h2 className="text-black text-xl font-bold mb-4 py-2">Votre Qr code de l&apos;evenement:</h2>
+       <TicketCard
+        ticketId="32212"
+        instructions="Scan this QR code or show this ticket at of concert" />
+        </div>
+
         </div>
       </div>
-</div>
-<div className="container mx-auto px-4 py-8">
-  {/* <EventCard
-    category="Event"
-    name={event.name}
-    date={new Date(event.start_at).toLocaleDateString()}
-    location={formatAdress(event.adress)}
-    image={"/images/homepage/culture.jpg"}
-  /> */}
 </div>
 </>
   );
