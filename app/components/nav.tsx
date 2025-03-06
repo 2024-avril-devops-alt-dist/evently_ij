@@ -40,7 +40,7 @@ const Nav = () => {
         <Link href="/search" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">
           Search
         </Link>
-        <Link href="/music" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">
+        <Link href="/events" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">
           Music
         </Link>
         <Link href="/profile" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">

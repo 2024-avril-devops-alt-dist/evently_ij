@@ -1,6 +1,6 @@
 "use client"
 import { useRouter } from 'next/navigation';
-import OnboardingCarousel from './components/carousel_home';
+import OnboardingCarousel from './components/carouselHome';
 
 export default function Home(): React.ReactNode {
   const router = useRouter();
