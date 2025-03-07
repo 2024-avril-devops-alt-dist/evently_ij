@@ -15,14 +15,13 @@ test.describe('Responsive Visual Regression', () => {
       
       await page.goto('http://localhost:3000/');
       
-      if (viewport.width <= 375) { 
-        await page.getByRole('button').first().click();
-        await page.getByRole('button').nth(2).click();
-        await page.getByRole('button').first().click();
-        await page.getByRole('button').nth(2).click();
-      } else { 
-        await page.getByRole('button').nth(4).click();
-      }
+        // Utiliser des data-testid (recommandé)
+    if (viewport.width <= 375) {
+        await page.locator('[data-testid="mobile-menu-button"]').click();
+        await page.locator('[data-testid="target-action-mobile"]').click();
+    } else {
+        await page.locator('[data-testid="target-action-desktop"]').click();
+    }
       
       // Attendre que la page soit stable
       await page.waitForTimeout(500);
